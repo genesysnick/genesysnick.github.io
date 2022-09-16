@@ -70,6 +70,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	position: absolute;
 	bottom: 12px;
 	right: 20px;
+	background: url(/images/hackathon-widget-button.png);
 }
 </style>
 </head>
@@ -116,7 +117,7 @@ window.onload = function () {
     deploymentId: 'dcabf129-c29c-404d-a592-4d133e5dcbd9'
   });
 </script>
-<button style="background: url(/images/hackathon-widget-button.png)" id="hackathon-widget-button" onClick="toggleMessenger()"></button>
+<button id="hackathon-widget-button" onClick="toggleMessenger()"></button>
 <script type="text/javascript">
   function toggleMessenger(){
     Genesys("command", "Messenger.open", {},
