@@ -116,7 +116,7 @@ window.onload = function () {
     deploymentId: 'dcabf129-c29c-404d-a592-4d133e5dcbd9'
   });
 </script>
-<img id= "hackathon-widget-button" src="/images/hackathon-widget-button.png" onclick="toggleMessenger()">
+<button id="hackathon-widget-button" onClick="toggleMessenger()"><img src="/images/hackathon-widget-button.png" /></button>
 <script type="text/javascript">
   function toggleMessenger(){
     Genesys("command", "Messenger.open", {},
