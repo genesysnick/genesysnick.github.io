@@ -18,7 +18,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	position: absolute;
     top: 60%;
     right: 0px;
-    background: rgba(0, 0, 0, .03);
+    background: rgba(0, 0, 0, .05);
     width: min(109px);
     padding: 20px;
 }
@@ -75,6 +75,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 	border-radius: 50%!important;
+	font-weight: 500;
+    line-height: 1.75;
 }
 .cx-messenger-container {
     bottom: 86px !important;
@@ -94,6 +96,12 @@ button {
 
 <h3>Messenger - Floating Quick Replies</h3>
 <p>Goal: Drive more conversation starts by displaying floating Quick Replies outside of Messenger, enticing the customer to begin a conversation</p>
+<br>
+<h3>Current state:</h3>
+<p>Messenger has Conversation Auto-start in Beta and releasing GA on September 14th. When Auto-start is enabled, as soon as Messenger is opened a "Customer joined" event is sent behind the scenes, triggering the inbound message flow. Most commonly, the first action in the flow is a bot reply of some sort.</p>
+<br>
+<h3>Idea:</h3>
+<p>HMW display the initial question+Quick Reply buttons of the bot flow outside of Messenger, before the user has opened Messenger. By "starting" the conversation outside of Messenger, customers may be more likely to start the conversation when they otherwise may not have.</p>
 
 <div id="modal">
   <div class="modalcontent">
