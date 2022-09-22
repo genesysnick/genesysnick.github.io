@@ -23,7 +23,7 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
-
+/**
 	// Dropdowns.
 		$('#nav > ul').dropotron({
 			mode: 'fade',
@@ -60,5 +60,5 @@
 					target: $body,
 					visibleClass: 'navPanel-visible'
 				});
-
+**/
 })(jQuery);
